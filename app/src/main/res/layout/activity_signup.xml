@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/infinity_bg"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/signupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:textColor="@android:color/white" />
+
+    <!-- Name -->
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupTitle"
+        android:hint="Name"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp" />
+
+    <!-- Last Name -->
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etFirstName"
+        android:hint="Last Name"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etLastName"
+        android:hint="Email"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="10dp" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:hint="Password"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp" />
+
+    <!-- Signup Button -->
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:text="Sign Up"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>
